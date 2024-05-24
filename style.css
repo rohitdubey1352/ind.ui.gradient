@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    background: linear-gradient(to right, #ffa500, #800080);
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: rgba(255, 255, 255, .4);
+}
+
+nav .logo h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: .14rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 4rem;
+    font-weight: 700;
+    letter-spacing: .14rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* main */
+body main {
+    position: relative;
+    width: 50vw;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    /* background: pink; */
+}
+
+main .buttons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+main h3 {
+    color: #fff;
+}
+
+.buttons #btn1,
+.buttons #btn2 {
+    border: none;
+    background: #fff;
+    border-radius: 4rem;
+    letter-spacing: .12rem;
+    padding: .6rem 1.6rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.buttons #btn1:hover,
+.buttons #btn2:hover {
+    transform: translateY(-6px);
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.4);
+
+}
+
+#btn2 {
+    background: purple !important;
+    color: #fff;
+}
+
+.copyContent {
+    position: relative;
+    padding: 1rem;
+    cursor: pointer;
+    border-left: .18rem solid #fff;
+    border-right: .18rem solid #fff;
+    border-radius: .2rem;
+    width: 40vw;
+    height: auto;
+    text-align: center;
+    background: rgba(255, 255, 255, .4);
+}
+
+.copyContent p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+/* copywirte */
+body .copywirte {
+    position: absolute;
+    color: #fff;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -2%);
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 720px) {
+    body {
+        height: 100vh;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .copyContent {
+        width: 80vw;
+    }
+}
